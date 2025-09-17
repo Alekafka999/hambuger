@@ -1,0 +1,118 @@
+*
+{
+font-family: 'Segoie UI', Tahoma, Geneva, Verdana, sans-serif;
+box-sizing: border-box;
+}
+
+header img {
+    width: 80px; /* tamanho menor e proporcional */
+    height: auto;
+    display: block;
+    margin-right: 20px;
+    align-self: flex-start;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    outline: none;
+}
+
+header a:hover {
+    color: #000000;
+    text-transform: uppercase;
+    transition: 1s;
+    background-color: rgba(255, 0, 0, 2);
+}
+
+body {
+    margin: 0;
+}
+
+h1{
+    color: rgb(232, 10, 10);
+    text-align: center;
+    justify-content: center;
+}
+
+#produto div{
+    border: 2px solid rgb(248, 3, 11);
+}
+
+#banner{
+    display: grid;
+    height: 300px;
+    background: url(../img/1.jpg) no-repeat center center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+#banner h1{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 45px;
+    text-shadow: 0px 0px 10px rgba(242, 4, 4, 0.984);
+    background-color: rgba(255, 0, 0, 0.3);
+    border: 2px solid rgba(255, 0, 0, 0.7);
+    padding: 15px 25px;
+    border-radius: 8px;
+}
+
+#galeria span{
+    font-size:40px;
+    color: #000000;
+}
+
+#grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+#grid-galeria img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+#banner2{
+    display: grid;
+    height: 300px;
+    background: url(../img/parallax/5.jpg) no-repeat center center;
+    background-size:auto;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+#banner2 h1{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 45px;
+    text-shadow: 0px 0px 10px rgba(242, 4, 4, 0.984);
+    background-color: rgba(255, 0, 0, 0.3);
+    border: 2px solid rgba(255, 0, 0, 0.7);
+    padding: 15px 25px;
+    border-radius: 8px;
+}
