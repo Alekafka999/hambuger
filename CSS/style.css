@@ -117,37 +117,32 @@ h1{
     border-radius: 8px;
 }
 
-footer div {
-    padding: 5px
-}
-
-footer div:first-child {
-    text-align: center;
-}
-
-.footer-links  {
+#maps div{
     display: flex;
-    flex-direction: column;
-    gap: 10px
-}
-
-footer{
-    
-    display: grid;
     justify-content: space-between;
     padding: 30px;
     width: 80%;
     margin: 0 auto;
+    flex-direction: column;
+    width: 95%;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
 
+}   
 
+#social{
+    justify-content: center;
+    color: #FFFFFF;
+    background-color:#000000 ;
+    padding: 28px;
 }
 
-footer a {
-    text-decoration: none;
-    color: #000;
-}
-
-footer a:hover {
-    color: #009C3B;
-    transition: 1s;
+#rights{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color:#ff0000 ;
+    padding: 28px;
 }
