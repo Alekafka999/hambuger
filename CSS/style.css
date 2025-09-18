@@ -1,6 +1,6 @@
 *
 {
-font-family: 'Segoie UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: 'Open Sans', 'Segoe UI', 'Roboto', 'Lato', 'Helvetica Neue', Arial, sans-serif;
 box-sizing: border-box;
 }
 
@@ -40,6 +40,11 @@ header a:hover {
     text-transform: uppercase;
     transition: 1s;
     background-color: rgba(255, 0, 0, 2);
+}
+
+header a:focus {
+    outline: 4px solid #ff0000;
+    outline-offset: 2px;
 }
 
 body {
@@ -83,14 +88,16 @@ h1{
     color: #000000;
 }
 
-#grid-galeria{
+#grid-galeria,
+.grid-galeria{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     
 }
-#grid-galeria img{
+#grid-galeria img,
+.grid-galeria img{
     width: 100%;
-    height: 200px;
+    aspect-ratio: 1;
     object-fit: cover;
     padding: 5px;
 }
@@ -98,8 +105,8 @@ h1{
 #banner2{
     display: grid;
     height: 300px;
-    background: url(../img/parallax/5.jpg) no-repeat center center;
-    background-size:auto;
+    background: url(../img/parallax/5.jpg) no-repeat left center;
+    background-size:125%;
     justify-content: center;
     align-items: center;
     margin: 30px 0px;
@@ -117,32 +124,64 @@ h1{
     border-radius: 8px;
 }
 
-#maps div{
+.maps {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    background-color: white;
     padding: 30px;
-    width: 80%;
     margin: 0 auto;
-    flex-direction: column;
-    width: 95%;
-    padding: 20px;
-    text-align: center;
-    gap: 20px;
+    max-width: 1200px;
+}
 
+.maps ul {
+    flex: 1;
+    list-style: disc;
+    padding: 0 20px 0 40px;
+    margin: 0;
+    text-align: left;
+}
+
+.maps h3 {
+    color: black;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.maps li {
+    margin-bottom: 15px;
+}
+
+.maps a {
+    color: black;
+    text-decoration: none;
+}
+
+.maps a:hover {
+    color: #ff0000;
 }   
 
-#social{
+.social{
+    display: flex;
     justify-content: center;
+    gap: 20px;
     color: #FFFFFF;
     background-color:#000000 ;
     padding: 28px;
+}
+
+.social a {
+    color: #FFFFFF !important;
+}
+
+.social a:visited {
+    color: #FFFFFF !important;
 }
 
 #rights{
     text-align: center;
     color: #FFFFFF;
     font-size: 16px;
-    margin-top: 10px;
+    margin: 0;
     background-color:#ff0000 ;
     padding: 28px;
 }
